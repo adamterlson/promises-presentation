@@ -27,6 +27,29 @@ module.exports = exports = app;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // app.get('/students', function(req, res){
 //   studentsProvider.getAll().then(function (students) {
 //     console.log('Students: \n', students);
