@@ -49,12 +49,13 @@ module.exports = exports = app;
 
 
 
-
-// app.get('/students', function(req, res){
-//   studentsProvider.getAll().then(function (students) {
-//     console.log('Students: \n', students);
-//     res.send(students);
-//   }).catch(function (err) {
-//     return res.json(500, { error: 'Failure fetching students' });
-//   });
-// });
+/*
+app.get('/students', function(req, res){
+  studentsProvider.getAll().then(function (students) {
+    console.log('Students: \n', students);
+    res.send(students);
+  }).catch(function (err) {
+    return res.json(500, { error: 'Failure fetching students' });
+  });
+});
+*/
