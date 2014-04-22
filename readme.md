@@ -4,9 +4,13 @@ To be used as a companion with [Adam Terlson's Promises Presentation](http://www
 
 ## Start up
 
-`npm install -g supervisor`
-`npm install && npm start`
+```
+npm install -g supervisor
+npm install && npm start
+```
 
 ## Running Tests
 
-`npm test`
+```
+npm test
+```
