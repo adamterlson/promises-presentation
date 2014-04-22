@@ -1,0 +1,23 @@
+{
+  "name": "promises-presentation",
+  "version": "0.0.0",
+  "description": "Promises samples for the talk slid.es/adamterlson/promises",
+  "main": "server.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --reporter spec --recursive --ui bdd -r test/common.js",
+    "start": "supervisor -w . server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.0.0",
+    "q": "^1.0.1",
+    "chai": "^1.9.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "mocha-as-promised": "^2.0.0",
+    "supertest": "^0.11.0",
+    "sinon": "^1.9.1"
+  }
+}
