@@ -7,7 +7,7 @@
     "test": "node_modules/mocha/bin/mocha --reporter spec --recursive --ui bdd -r test/common.js",
     "start": "supervisor -w . server.js"
   },
-  "author": "",
+  "author": "Adam Terlson",
   "license": "ISC",
   "dependencies": {
     "express": "^4.0.0",
