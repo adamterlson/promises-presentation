@@ -9,6 +9,10 @@ exports = module.exports = {
     var complete = 0;
     students.forEach(function (student) {
       recordsProvider.getByStudentId(student.id, function (err, record) {
+        if (err) {
+          return callback(err); // TODO: real exception handling
+        }
+
         student.record = record;
         complete += 1;
 
