@@ -5,12 +5,10 @@ var Q = require('q'),
 var students = require('../data/students');
 
 exports = module.exports = {
-  provider: recordsProvider,
-
   getAll: function (callback) {
     var complete = 0;
     students.forEach(function (student) {
-      this.provider.getByStudentId(student.id, function (err, record) {
+      recordsProvider.getByStudentId(student.id, function (err, record) {
         student.record = record;
         complete += 1;
 
@@ -46,14 +44,11 @@ exports = module.exports = {
 
 /*
 exports = module.exports = {
-  provider: recordsProvider,
-
   getAll: function () {
     var complete = 0;
-    var self = this;
 
     return Q.all(students.map(function (student) {
-      return self.provider.getByStudentId(student.id)
+      return recordsProvider.getByStudentId(student.id)
         .then(function (record) {
           student.record = record;
           return student;
